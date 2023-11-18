@@ -1,0 +1,20 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile with ncurses",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "${file}",
+                "-lncurses"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
